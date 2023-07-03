@@ -1,4 +1,5 @@
 from app.app import Calculator
+from decimal import Decimal
 
 import pytest
 
@@ -37,3 +38,9 @@ Test the sum function
 ])
 def test_sum(a, b, c):
     assert Calculator.sum(a, b) == c
+
+"""
+Test the pi function
+"""
+def test_pi():
+    assert Decimal(Calculator.pi()) == Decimal(3.141592653589793238)

@@ -11,3 +11,9 @@ class Calculator:
     @staticmethod
     def sum(a, b):
         return a + b
+
+    @staticmethod
+    def pi():
+        with open("app/resources/pi.txt", "r") as f:
+            pi = float(f.readline())
+        return pi
