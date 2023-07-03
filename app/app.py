@@ -26,4 +26,4 @@ class Calculator:
     
     @staticmethod
     def goldenpi():
-        return Calculator.pi() + Calculator.golden()
+        return Calculator.pi() * Calculator.golden()
