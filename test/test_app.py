@@ -44,3 +44,15 @@ Test the pi function
 """
 def test_pi():
     assert Decimal(Calculator.pi()) == Decimal(3.141592653589793238)
+    
+"""
+Test the golden function
+"""
+def test_golden():
+    assert Decimal(Calculator.golden()) == Decimal(1.618033988749)
+    
+"""
+Test the goldenpi function
+"""
+def test_goldenpi():
+    assert Decimal(Calculator.goldenpi()) == Decimal(3.141592653589793238 * 1.618033988749)

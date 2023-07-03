@@ -17,3 +17,13 @@ class Calculator:
         with open("app/resources/pi.txt", "r") as f:
             pi = float(f.readline())
         return pi
+    
+    @staticmethod
+    def golden():
+        with open("app/resources/golden.txt", "r") as f:
+            golden = float(f.readline())
+        return golden
+    
+    @staticmethod
+    def goldenpi():
+        return Calculator.pi() + Calculator.golden()
