@@ -27,3 +27,7 @@ class Calculator:
     @staticmethod
     def goldenpi():
         return Calculator.pi() * Calculator.golden()
+
+    @staticmethod
+    def square(a: int) -> int:
+        return a * a

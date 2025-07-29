@@ -56,3 +56,14 @@ Test the goldenpi function
 """
 def test_goldenpi():
     assert Decimal(Calculator.goldenpi()) == Decimal(3.141592653589793238 * 1.618033988749)
+
+"""
+Test the square function
+"""
+@pytest.mark.parametrize("a, b", [
+    (1, 1),
+    (2, 4),
+    (3, 9)
+])
+def test_square(a, b):
+    assert Calculator.square(a) == b
